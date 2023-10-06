@@ -38,8 +38,8 @@
  *
  */
  
-/*
-* - Write FPLEDG records to EXTVAR
+/**
+* - Write FPLEDG records to EXTVAR for variance processing
 */
 public class AddVarianceTrns extends ExtendM3Transaction {
   private final MIAPI mi;
