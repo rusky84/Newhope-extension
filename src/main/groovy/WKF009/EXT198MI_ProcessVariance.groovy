@@ -30,7 +30,11 @@
   private int currentDate;
   private int currentTime
 
-  public ProcessVariance(MIAPI mi, DatabaseAPI database, MICallerAPI miCaller, LoggerAPI logger, ProgramAPI program, IonAPI ion) {
+  /**
+   * ProcessVariance - Check for any variance lines in EXTVAR and recode accounting string
+   *
+  */
+   public ProcessVariance(MIAPI mi, DatabaseAPI database, MICallerAPI miCaller, LoggerAPI logger, ProgramAPI program, IonAPI ion) {
     this.mi = mi;
     this.database = database;
     this.miCaller = miCaller;
