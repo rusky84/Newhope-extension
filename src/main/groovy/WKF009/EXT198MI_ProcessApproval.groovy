@@ -57,6 +57,10 @@
   
   private List lstToBeApproved;
 
+  /**
+   * ProcessApproval - Check for any Supplier Invoices with all lines matched and approve for payment
+   *
+  */
   public ProcessApproval(MIAPI mi, LoggerAPI logger, DatabaseAPI database, MICallerAPI miCaller, ProgramAPI program) {
     this.mi = mi;
     this.logger = logger;
