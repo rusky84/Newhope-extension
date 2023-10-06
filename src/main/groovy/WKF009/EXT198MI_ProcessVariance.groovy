@@ -11,7 +11,11 @@
  import java.text.DecimalFormat;
  import java.time.ZoneId;
  
- public class ProcessVariance extends ExtendM3Transaction {
+/**
+  * ProcessVariance - Check for any variance lines in EXTVAR and recode accounting string
+  *
+ */
+public class ProcessVariance extends ExtendM3Transaction {
   private final MIAPI mi;
   private final IonAPI ion;
   private final LoggerAPI logger;
@@ -30,11 +34,7 @@
   private int currentDate;
   private int currentTime
 
-  /**
-   * ProcessVariance - Check for any variance lines in EXTVAR and recode accounting string
-   *
-  */
-   public ProcessVariance(MIAPI mi, DatabaseAPI database, MICallerAPI miCaller, LoggerAPI logger, ProgramAPI program, IonAPI ion) {
+  public ProcessVariance(MIAPI mi, DatabaseAPI database, MICallerAPI miCaller, LoggerAPI logger, ProgramAPI program, IonAPI ion) {
     this.mi = mi;
     this.database = database;
     this.miCaller = miCaller;
